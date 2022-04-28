@@ -66,7 +66,7 @@ def derive_key(your_private_key, their_public_key):
 
 # função para escolher o voto
 def escolher_voto():
-	voto = int(input('Escolha seu voto:')).to_bytes(length = 3, byteorder = 'big')
+	voto = int(input('Escolha o seu voto:')).to_bytes(length = 3, byteorder = 'big')
 	return voto
 
 # carregar chaves públicas do TSE (RSA e EC) direto do arquivo
